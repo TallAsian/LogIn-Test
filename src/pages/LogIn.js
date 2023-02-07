@@ -1,16 +1,25 @@
+import "./LogIn.css";
+
 function LogIn() {
   return (
-    <div>
+    <form>
       <div>
         <h2>Log in to your Account</h2>
       </div>
+        <div>
+          <input placeholder="Email" className="input"></input>
+        </div>
       <div>
-        <input placeholder="Email"></input>
+        <input placeholder="Password" className="input"></input>
+      </div>
+      <button className="button">LogIn</button>
+      <div className="spacing">
+        <a href="#">Forgot your password?</a>
       </div>
       <div>
-        <input placeholder="Password"></input>
+        New here? <a href="#">Register now</a>
       </div>
-    </div>
+    </form>
   );
 }
 
